@@ -2,13 +2,25 @@
   "francesco_guccini": {
     "nome": "Francesco Guccini",
     "nascita": "1940-06-14",
-    "morte": null,
-    "foto": "francesco_guccini.svg"
+    "morte": "2026-08-06",
+    "foto": "francesco_guccini.png"
   },
-  "chiave_in_cantautori_json": {
-    "nome": "Nome Completo del Cantautore",
-    "nascita": "YYYY-MM-DD",
+  "francesco_de_gregori": {
+    "nome": "Francesco De Gregori",
+    "nascita": "1951-04-04",
     "morte": null,
-    "foto": "nome_file.jpg"
+    "foto": "francesco_degregori.png"
+  },
+  "fabrizio_de_andre": {
+    "nome": "Fabrizio De André",
+    "nascita": "1940-02-18",
+    "morte": "1999-01-26",
+    "foto": "fabrizio_deandre.png"
+  },
+  "lucio_dalla": {
+    "nome": "Lucio Dalla",
+    "nascita": "1943-01-04",
+    "morte": "2012-03-04",
+    "foto": "lucio_dalla.png"
   }
 }

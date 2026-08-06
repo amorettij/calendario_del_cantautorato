@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizzazioni — Calendario del Cantautorato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER sempre visibile -->
+  <header class="site-header site-header--static" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">Calendario del Cantautorato</a>
+      <nav class="header-nav" aria-label="Navigazione principale">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="visualizzazioni.html" class="nav-link nav-link--active">Visualizzazioni</a>
+        <a href="about.html" class="nav-link">Progetto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO compatto -->
+  <section class="page-hero" aria-label="Intestazione pagina">
+    <div class="page-hero__rings hero-rings" aria-hidden="true">
+      <div class="ring ring--1"></div>
+      <div class="ring ring--2"></div>
+    </div>
+    <p class="page-hero__eyebrow">Dati e storie</p>
+    <h1 class="page-hero__title">Visualizzazioni</h1>
+    <p class="page-hero__sub">Le vite dei cantautori in una linea del tempo</p>
+  </section>
+
+  <!-- TIMELINE -->
+  <main>
+    <section class="timeline-section" aria-label="Linea del tempo cantautori">
+      <h2 class="timeline-section__title">Linea del tempo — Vite dei cantautori</h2>
+
+      <!-- contenuto generato da JS -->
+      <div id="timeline-container">
+        <div class="loading-state" id="tl-loading" role="status">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Caricamento…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL cantautore -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-name" aria-hidden="true">
+    <div class="modal-card" id="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Chiudi">✕</button>
+      <div id="modal-photo-area"></div>
+      <div class="modal-body">
+        <h2 class="modal-name" id="modal-name"></h2>
+        <div class="modal-meta" id="modal-meta"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2026 Calendario del Cantautorato</p>
+  </footer>
+
+  <script src="js/timeline.js"></script>
+</body>
+</html>

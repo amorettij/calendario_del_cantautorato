@@ -14,7 +14,12 @@
   <!-- HEADER (appare dopo l'hero) -->
   <header class="site-header" id="site-header" aria-hidden="true">
     <div class="header-inner">
-      <span class="header-title">Calendario del Cantautorato</span>
+      <a href="index.html" class="header-logo">Calendario del Cantautorato</a>
+      <nav class="header-nav" aria-label="Navigazione principale">
+        <a href="index.html" class="nav-link nav-link--active">Home</a>
+        <a href="visualizzazioni.html" class="nav-link">Visualizzazioni</a>
+        <a href="about.html" class="nav-link">Progetto</a>
+      </nav>
       <span class="header-date" id="header-date"></span>
     </div>
   </header>
@@ -22,11 +27,75 @@
   <!-- HERO: roulette della data -->
   <section class="hero" id="hero">
     <div class="hero-noise" aria-hidden="true"></div>
-    <div class="hero-rings" aria-hidden="true">
-      <div class="ring ring--1"></div>
-      <div class="ring ring--2"></div>
-      <div class="ring ring--3"></div>
-    </div>
+
+    <!-- Decorazione geometrica anni 70: archi SVG che si tracciano -->
+    <svg class="hero-decor" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- cerchio-guida esterno, sottilissimo -->
+      <g class="hdec-arc-wrap hdec-arc-wrap--5">
+        <circle cx="450" cy="450" r="440" class="hdec-arc hdec-arc--5"/>
+      </g>
+      <!-- arco grande mustard 240° -->
+      <g class="hdec-arc-wrap hdec-arc-wrap--1">
+        <circle cx="450" cy="450" r="400" class="hdec-arc hdec-arc--1" transform="rotate(-120, 450, 450)"/>
+      </g>
+      <!-- semicerchio teal 180° -->
+      <g class="hdec-arc-wrap hdec-arc-wrap--2">
+        <circle cx="450" cy="450" r="310" class="hdec-arc hdec-arc--2" transform="rotate(90, 450, 450)"/>
+      </g>
+      <!-- arco orange-red 300° -->
+      <g class="hdec-arc-wrap hdec-arc-wrap--3">
+        <circle cx="450" cy="450" r="215" class="hdec-arc hdec-arc--3" transform="rotate(-150, 450, 450)"/>
+      </g>
+      <!-- arco cream 130° piccolo -->
+      <g class="hdec-arc-wrap hdec-arc-wrap--4">
+        <circle cx="450" cy="450" r="128" class="hdec-arc hdec-arc--4" transform="rotate(-90, 450, 450)"/>
+      </g>
+
+      <!-- VINILE: g esterno per fade-in, g interno per rotazione continua -->
+      <g class="hdec-vinyl">
+        <g class="hdec-vinyl-spin">
+          <circle cx="450" cy="450" r="390" fill="none" stroke="var(--dark-olive)" stroke-width="2"   opacity=".6"/>
+          <circle cx="450" cy="450" r="375" fill="none" stroke="var(--dark-olive)" stroke-width="1.5" opacity=".5"/>
+          <circle cx="450" cy="450" r="360" fill="none" stroke="var(--dark-olive)" stroke-width="2"   opacity=".6"/>
+          <circle cx="450" cy="450" r="345" fill="none" stroke="var(--dark-olive)" stroke-width="1.5" opacity=".5"/>
+          <circle cx="450" cy="450" r="330" fill="none" stroke="var(--dark-olive)" stroke-width="2"   opacity=".55"/>
+          <circle cx="450" cy="450" r="315" fill="none" stroke="var(--dark-olive)" stroke-width="1.5" opacity=".45"/>
+          <circle cx="450" cy="450" r="300" fill="none" stroke="var(--dark-olive)" stroke-width="2"   opacity=".55"/>
+          <circle cx="450" cy="450" r="285" fill="none" stroke="var(--dark-olive)" stroke-width="1.5" opacity=".45"/>
+          <circle cx="450" cy="450" r="270" fill="none" stroke="var(--dark-olive)" stroke-width="2"   opacity=".5"/>
+        </g>
+      </g>
+
+      <!-- Etichetta centrale — statica -->
+      <g class="hdec-vinyl-label">
+        <circle cx="450" cy="450" r="90" fill="var(--orange-red)" opacity=".2"/>
+        <line x1="450" y1="365" x2="450" y2="378" stroke="var(--cream)" stroke-width="1.5" opacity=".35"/>
+        <line x1="450" y1="365" x2="450" y2="378" stroke="var(--cream)" stroke-width="1.5" opacity=".35" transform="rotate(60  450 450)"/>
+        <line x1="450" y1="365" x2="450" y2="378" stroke="var(--cream)" stroke-width="1.5" opacity=".35" transform="rotate(120 450 450)"/>
+        <line x1="450" y1="365" x2="450" y2="378" stroke="var(--cream)" stroke-width="1.5" opacity=".35" transform="rotate(180 450 450)"/>
+        <line x1="450" y1="365" x2="450" y2="378" stroke="var(--cream)" stroke-width="1.5" opacity=".35" transform="rotate(240 450 450)"/>
+        <line x1="450" y1="365" x2="450" y2="378" stroke="var(--cream)" stroke-width="1.5" opacity=".35" transform="rotate(300 450 450)"/>
+        <circle cx="450" cy="450" r="10" fill="var(--bg)" opacity=".95"/>
+      </g>
+
+      <!-- tacche/raggi radiali (12 × 30°) sull'anello esterno -->
+      <g class="hdec-spoke">
+        <line x1="450" y1="10"  x2="450" y2="30"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(30  450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(60  450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(90  450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(120 450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(150 450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(180 450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(210 450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(240 450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(270 450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(300 450 450)"/>
+        <line x1="450" y1="10"  x2="450" y2="30" transform="rotate(330 450 450)"/>
+      </g>
+      <!-- punto centrale -->
+      <circle cx="450" cy="450" r="9" class="hdec-center"/>
+    </svg>
     <div class="hero-content">
       <p class="hero-eyebrow">Oggi</p>
       <div class="roulette-wrap" id="roulette-wrap" aria-label="Data corrente animata">
@@ -48,7 +117,7 @@
           <div class="slot-mask slot-mask--bottom" aria-hidden="true"></div>
         </div>
       </div>
-      <p class="hero-sub">Le voci che hanno cantato l'Italia</p>
+      <p class="hero-sub">Ascolta le canzoni di questa Giornata</p>
       <a href="#songs-container" class="hero-cta" aria-label="Scopri le canzoni di oggi">
         <span>Scopri le canzoni</span>
         <span class="cta-arrow" aria-hidden="true"></span>
@@ -76,7 +145,7 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <p>Calendario del Cantautorato</p>
+    <p>© 2026 Calendario del Cantautorato</p>
   </footer>
 
   <script src="js/roulette.js"></script>
