@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario del Cantautorato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER (appare dopo l'hero) -->
+  <header class="site-header" id="site-header" aria-hidden="true">
+    <div class="header-inner">
+      <span class="header-title">Calendario del Cantautorato</span>
+      <span class="header-date" id="header-date"></span>
+    </div>
+  </header>
+
+  <!-- HERO: roulette della data -->
+  <section class="hero" id="hero">
+    <div class="hero-noise" aria-hidden="true"></div>
+    <div class="hero-rings" aria-hidden="true">
+      <div class="ring ring--1"></div>
+      <div class="ring ring--2"></div>
+      <div class="ring ring--3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Oggi</p>
+      <div class="roulette-wrap" id="roulette-wrap" aria-label="Data corrente animata">
+        <div class="roulette-slot" id="slot-day" aria-label="Giorno">
+          <div class="slot-mask slot-mask--top" aria-hidden="true"></div>
+          <div class="roulette-track" id="track-day"></div>
+          <div class="slot-mask slot-mask--bottom" aria-hidden="true"></div>
+        </div>
+        <span class="slot-sep" aria-hidden="true">/</span>
+        <div class="roulette-slot roulette-slot--month" id="slot-month" aria-label="Mese">
+          <div class="slot-mask slot-mask--top" aria-hidden="true"></div>
+          <div class="roulette-track" id="track-month"></div>
+          <div class="slot-mask slot-mask--bottom" aria-hidden="true"></div>
+        </div>
+        <span class="slot-sep" aria-hidden="true">/</span>
+        <div class="roulette-slot roulette-slot--year" id="slot-year" aria-label="Anno">
+          <div class="slot-mask slot-mask--top" aria-hidden="true"></div>
+          <div class="roulette-track" id="track-year"></div>
+          <div class="slot-mask slot-mask--bottom" aria-hidden="true"></div>
+        </div>
+      </div>
+      <p class="hero-sub">Le voci che hanno cantato l'Italia</p>
+      <a href="#songs-container" class="hero-cta" aria-label="Scopri le canzoni di oggi">
+        <span>Scopri le canzoni</span>
+        <span class="cta-arrow" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CANZONI generate dinamicamente -->
+  <main id="songs-container" aria-live="polite">
+    <div class="loading-state" id="loading-indicator" role="status">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Caricamento in corso…</p>
+    </div>
+  </main>
+
+  <!-- FALLBACK: nessuna canzone per oggi -->
+  <div class="empty-state hidden" id="no-songs" role="status">
+    <div class="empty-state__icon" aria-hidden="true">♩</div>
+    <h2 class="empty-state__title">Nessuna canzone per oggi</h2>
+    <p class="empty-state__desc">
+      Il calendario non contiene canzoni per questa data.<br>
+      Torna a trovarci domani.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Calendario del Cantautorato</p>
+  </footer>
+
+  <script src="js/roulette.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

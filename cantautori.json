@@ -1,0 +1,14 @@
+{
+  "francesco_guccini": {
+    "nome": "Francesco Guccini",
+    "nascita": "1940-06-14",
+    "morte": null,
+    "foto": "francesco_guccini.svg"
+  },
+  "chiave_in_cantautori_json": {
+    "nome": "Nome Completo del Cantautore",
+    "nascita": "YYYY-MM-DD",
+    "morte": null,
+    "foto": "nome_file.jpg"
+  }
+}
