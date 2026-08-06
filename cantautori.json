@@ -22,5 +22,47 @@
     "nascita": "1943-01-04",
     "morte": "2012-03-04",
     "foto": "lucio_dalla.png"
+  },
+  "lucio_battisti": {
+    "nome": "Lucio Battisti",
+    "nascita": "1943-03-05",
+    "morte": "1998-09-09",
+    "foto": "lucio_battisti.png"
+  },
+  "fabio_concato": {
+    "nome": "Fabio Concato",
+    "nascita": "1953-05-31",
+    "morte": null,
+    "foto": "fabio_concato.png"
+  },
+  "franco_battiato": {
+    "nome": "Franco Battiato",
+    "nascita": "1945-03-23",
+    "morte": "2021-05-18",
+    "foto": "franco_battiato.png"
+  },
+  "rino_gaetano": {
+    "nome": "Rino Gaetano",
+    "nascita": "1950-10-29",
+    "morte": "1981-06-02",
+    "foto": "rino_gaetano.png"
+  },
+  "roberto_vecchioni": {
+    "nome": "Roberto Vecchioni",
+    "nascita": "1943-06-25",
+    "morte": null,
+    "foto": "roberto_vecchioni.png"
+  },
+  "giorgio_gaber": {
+    "nome": "Giorgio Gaber",
+    "nascita": "1939-01-25",
+    "morte": "2003-01-01",
+    "foto": "giorgio_gaber.png"
+  },
+  "pierangelo_bertoli": {
+    "nome": "Pierangelo Bertoli",
+    "nascita": "1942-11-05",
+    "morte": "2002-10-07",
+    "foto": "pierangelo_bertoli.png"
   }
 }

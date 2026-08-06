@@ -25,10 +25,7 @@
 
   <!-- HERO compatto -->
   <section class="page-hero" aria-label="Intestazione pagina">
-    <div class="page-hero__rings hero-rings" aria-hidden="true">
-      <div class="ring ring--1"></div>
-      <div class="ring ring--2"></div>
-    </div>
+
     <p class="page-hero__eyebrow">Dati e storie</p>
     <h1 class="page-hero__title">Visualizzazioni</h1>
     <p class="page-hero__sub">Le vite dei cantautori in una linea del tempo</p>
@@ -36,6 +33,101 @@
 
   <!-- TIMELINE -->
   <main>
+
+    <!-- Decorazione laterale sinistra -->
+    <div class="side-decor side-decor--left" aria-hidden="true">
+
+      <svg class="sd-node" style="top:2%; animation-delay:.2s" viewBox="0 0 240 320" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60"  cy="150" r="95"  class="sd-fill sd-fill--tl"/>
+        <circle cx="60"  cy="150" r="140" class="sd-ring" stroke="var(--teal)" stroke-width="1.5"/>
+        <g class="sd-wrap sd-wrap--a">
+          <circle cx="60"  cy="150" r="122" class="sd-arc" stroke="var(--teal)"    stroke-width="3"   stroke-dasharray="511 255" transform="rotate(-40,60,150)"  opacity=".46"/>
+        </g>
+        <g class="sd-wrap sd-wrap--f">
+          <circle cx="60"  cy="150" r="68"  class="sd-arc" stroke="var(--mustard)" stroke-width="2.5" stroke-dasharray="214 213" transform="rotate(80,60,150)"   opacity=".4"/>
+        </g>
+        <circle cx="195" cy="44"  r="30" class="sd-fill sd-fill--ac" fill="var(--mustard)"/>
+        <circle cx="210" cy="230" r="14" fill="var(--cream)" opacity=".28"/>
+      </svg>
+
+      <svg class="sd-node" style="top:35%; animation-delay:.55s" viewBox="0 0 240 320" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15"  cy="160" r="105" class="sd-fill sd-fill--mu"/>
+        <circle cx="15"  cy="160" r="155" class="sd-ring" stroke="var(--mustard)" stroke-width="1"/>
+        <g class="sd-wrap sd-wrap--c">
+          <circle cx="15"  cy="160" r="135" class="sd-arc" stroke="var(--mustard)"    stroke-width="3"   stroke-dasharray="637 212" transform="rotate(110,15,160)"  opacity=".42"/>
+        </g>
+        <g class="sd-wrap sd-wrap--d">
+          <circle cx="15"  cy="160" r="78"  class="sd-arc" stroke="var(--orange-red)" stroke-width="4"   stroke-dasharray="272 136" transform="rotate(-90,15,160)"  opacity=".44"/>
+        </g>
+        <circle cx="175" cy="55"  r="28" class="sd-fill sd-fill--ac" fill="var(--teal)"/>
+        <circle cx="195" cy="255" r="17" class="sd-fill sd-fill--ac" fill="var(--cream)"/>
+        <circle cx="220" cy="140" r="11" fill="var(--orange-red)" opacity=".32"/>
+      </svg>
+
+      <svg class="sd-node" style="top:70%; animation-delay:.85s" viewBox="0 0 240 320" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="85"  cy="125" r="68"  class="sd-fill sd-fill--or"/>
+        <circle cx="5"   cy="235" r="38"  class="sd-fill sd-fill--ac" fill="var(--teal)"/>
+        <circle cx="195" cy="38"  r="22"  class="sd-fill sd-fill--ac" fill="var(--cream)"/>
+        <circle cx="85"  cy="125" r="118" class="sd-ring" stroke="var(--orange-red)" stroke-width="1.5"/>
+        <g class="sd-wrap sd-wrap--e">
+          <circle cx="85"  cy="125" r="100" class="sd-arc" stroke="var(--orange-red)" stroke-width="3"   stroke-dasharray="524 105" transform="rotate(-160,85,125)" opacity=".44"/>
+        </g>
+        <g class="sd-wrap sd-wrap--b">
+          <circle cx="85"  cy="125" r="52"  class="sd-arc" stroke="var(--cream)"      stroke-width="2.5" stroke-dasharray="145 182" transform="rotate(55,85,125)"   opacity=".3"/>
+        </g>
+        <circle cx="170" cy="265" r="12" fill="var(--mustard)" opacity=".3"/>
+      </svg>
+
+    </div>
+
+    <!-- Decorazione laterale destra -->
+    <div class="side-decor side-decor--right" aria-hidden="true">
+
+      <svg class="sd-node" style="top:12%; animation-delay:.35s" viewBox="0 0 240 320" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="160" cy="130" r="92"  class="sd-fill sd-fill--mu"/>
+        <circle cx="160" cy="130" r="142" class="sd-ring" stroke="var(--mustard)" stroke-width="1"/>
+        <g class="sd-wrap sd-wrap--b">
+          <circle cx="160" cy="130" r="124" class="sd-arc" stroke="var(--mustard)"    stroke-width="2.5" stroke-dasharray="520 260" transform="rotate(50,160,130)"  opacity=".4"/>
+        </g>
+        <g class="sd-wrap sd-wrap--a">
+          <circle cx="160" cy="130" r="70"  class="sd-arc" stroke="var(--teal)"       stroke-width="3.5" stroke-dasharray="366 73"  transform="rotate(-70,160,130)" opacity=".48"/>
+        </g>
+        <circle cx="28"  cy="32"  r="34" class="sd-fill sd-fill--ac" fill="var(--orange-red)"/>
+        <circle cx="12"  cy="248" r="13" fill="var(--cream)" opacity=".26"/>
+        <circle cx="8"   cy="145" r="20" class="sd-fill sd-fill--ac" fill="var(--teal)"/>
+      </svg>
+
+      <svg class="sd-node" style="top:48%; animation-delay:.65s" viewBox="0 0 240 320" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="210" cy="150" r="118" class="sd-fill sd-fill--tl"/>
+        <circle cx="48"  cy="46"  r="40"  class="sd-fill sd-fill--ac" fill="var(--mustard)"/>
+        <circle cx="18"  cy="228" r="26"  class="sd-fill sd-fill--ac" fill="var(--orange-red)"/>
+        <circle cx="210" cy="150" r="168" class="sd-ring" stroke="var(--teal)" stroke-width="1"/>
+        <g class="sd-wrap sd-wrap--c">
+          <circle cx="210" cy="150" r="144" class="sd-arc" stroke="var(--teal)"    stroke-width="3"   stroke-dasharray="678 226" transform="rotate(-20,210,150)"  opacity=".46"/>
+        </g>
+        <g class="sd-wrap sd-wrap--e">
+          <circle cx="210" cy="150" r="86"  class="sd-arc" stroke="var(--cream)"   stroke-width="2.5" stroke-dasharray="270 270" transform="rotate(130,210,150)"  opacity=".32"/>
+        </g>
+        <circle cx="30"  cy="290" r="15" fill="var(--mustard)" opacity=".3"/>
+      </svg>
+
+      <svg class="sd-node" style="top:76%; animation-delay:.95s" viewBox="0 0 240 320" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="145" cy="138" r="76"  class="sd-fill sd-fill--cr"/>
+        <circle cx="10"  cy="82"  r="42"  class="sd-fill sd-fill--ac" fill="var(--teal)"/>
+        <circle cx="8"   cy="258" r="30"  class="sd-fill sd-fill--ac" fill="var(--orange-red)"/>
+        <circle cx="145" cy="138" r="124" class="sd-ring" stroke="var(--cream)" stroke-width="1.5"/>
+        <g class="sd-wrap sd-wrap--f">
+          <circle cx="145" cy="138" r="106" class="sd-arc" stroke="var(--cream)"    stroke-width="2.5" stroke-dasharray="443 222" transform="rotate(65,145,138)"   opacity=".3"/>
+        </g>
+        <g class="sd-wrap sd-wrap--d">
+          <circle cx="145" cy="138" r="58"  class="sd-arc" stroke="var(--mustard)"  stroke-width="3"   stroke-dasharray="121 243" transform="rotate(-95,145,138)"  opacity=".44"/>
+        </g>
+        <circle cx="218" cy="258" r="16" fill="var(--mustard)" opacity=".3"/>
+        <circle cx="225" cy="60"  r="11" fill="var(--teal)"    opacity=".35"/>
+      </svg>
+
+    </div>
+
     <section class="timeline-section" aria-label="Linea del tempo cantautori">
       <h2 class="timeline-section__title">Linea del tempo — Vite dei cantautori</h2>
 

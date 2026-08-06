@@ -10,6 +10,28 @@
       "spotify": "https://open.spotify.com/track/05Y8ErDoSfgaUkI6HWnEM8"
     }
   ],
+  "2026-08-07": [
+    {
+      "titolo": "7 Agosto di pomeriggio",
+      "autore": "Lucio Battisti",
+      "autore_json": "lucio_battisti",
+      "citazione": "7 agosto di pomeriggio, fra le lamiere roventi. Di un cimitero di automobili solo io, silenzioso. Eppure straordinariamente vivo.",
+      "commento": "",
+      "youtube": "https://www.youtube.com/watch?v=Rq9NCr835Sg",
+      "spotify": "https://open.spotify.com/track/2sa4s7hBB0oYJCRuAhbzd4"
+    }
+  ],
+  "2026-08-10": [
+    {
+      "titolo": "La sera dei miracoli",
+      "autore": "Lucio Dalla",
+      "autore_json": "lucio_dalla",
+      "citazione": "E in mezzo a questo mare cercherò di scoprire quale stella sei",
+      "commento": "",
+      "youtube": "https://www.youtube.com/watch?v=CJEk72PJ5fo",
+      "spotify": "https://open.spotify.com/track/4tKiqgP4hiFNSCDeoaNctg"
+    }
+  ],
   "YYYY-MM-DD": [
     {
       "titolo": "Titolo della canzone",

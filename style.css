@@ -435,6 +435,68 @@ body {
   opacity: .35;
 }
 .page-hero__rings .ring { animation-duration: 8s; }
+
+/* ============================================================
+   DECORAZIONE LATERALE — corpo pagine secondarie
+   ============================================================ */
+main { position: relative; }
+
+.side-decor {
+  position: absolute;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+.side-decor--left  { left: 0; }
+.side-decor--right { right: 0; }
+
+.sd-node {
+  position: absolute;
+  width: 240px;
+  height: 320px;
+  overflow: visible;
+  opacity: 0;
+  animation: fade-in 1.6s var(--ease-out) both;
+}
+
+/* dischi riempiti */
+.sd-fill { transform-box: fill-box; transform-origin: center; }
+.sd-fill--mu { fill: var(--mustard);    fill-opacity: .05; animation: sd-breathe 10s ease-in-out       infinite; }
+.sd-fill--tl { fill: var(--teal);       fill-opacity: .06; animation: sd-breathe 13s ease-in-out  4s   infinite; }
+.sd-fill--or { fill: var(--orange-red); fill-opacity: .04; animation: sd-breathe 16s ease-in-out  8s   infinite; }
+.sd-fill--cr { fill: var(--cream);      fill-opacity: .04; animation: sd-breathe 11s ease-in-out  2s   infinite; }
+.sd-fill--ac { fill-opacity: .05; }
+
+@keyframes sd-breathe {
+  0%, 100% { transform: scale(1);    fill-opacity: .03; }
+  50%       { transform: scale(1.1); fill-opacity: .09; }
+}
+
+/* anelli sottili */
+.sd-ring { fill: none; opacity: .14; }
+
+/* archi */
+.sd-arc { fill: none; }
+
+/* wrapper rotanti */
+.sd-wrap { transform-box: fill-box; transform-origin: center; }
+.sd-wrap--a { animation: sd-spin 44s linear infinite; }
+.sd-wrap--b { animation: sd-spin 29s linear infinite; }
+.sd-wrap--c { animation: sd-spin 60s linear infinite; }
+.sd-wrap--d { animation: sd-spin 21s linear infinite; }
+.sd-wrap--e { animation: sd-spin 70s linear infinite; }
+.sd-wrap--f { animation: sd-spin 36s linear infinite; }
+
+@keyframes sd-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (max-width: 1100px) { .side-decor { display: none; } }
+
 .page-hero__eyebrow {
   font-size: .75rem;
   letter-spacing: .25em;
@@ -649,6 +711,7 @@ body {
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: top center;
+  filter: grayscale(100%);
 }
 .author-photo-placeholder {
   width: 100%;
@@ -766,6 +829,7 @@ body {
   object-position: top center;
   border: 1px solid var(--border);
   flex-shrink: 0;
+  filter: grayscale(100%);
 }
 .tl-photo-placeholder {
   width: 38px; height: 38px;
@@ -905,6 +969,7 @@ body {
   object-fit: cover;
   object-position: top center;
   display: block;
+  filter: grayscale(100%);
 }
 .modal-photo-placeholder {
   width: 100%;
