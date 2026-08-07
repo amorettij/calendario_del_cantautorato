@@ -245,19 +245,19 @@
 
         /* nessuna canzone per oggi: messaggio + canzoni di stagione */
         if (allSongs.length === 0) {
-          if (loadingEl) loadingEl.classList.add('hidden');
+          if (loadingEl) loadingEl.remove();
 
           const stagione = getStagioneInfo();
           const stagioneSongs = calendario[stagione.key] || [];
 
-          songsEl.innerHTML = `
+          songsEl.insertAdjacentHTML('beforeend', `
             <div class="empty-state">
               <div class="empty-state__icon" aria-hidden="true">♩</div>
               <p class="empty-state__title">Per questa giornata non abbiamo ancora trovato nessuna canzone!</p>
               <p class="empty-state__contact">Hai dei suggerimenti da darci?&nbsp;<a href="about.html" class="empty-link">Contattaci</a></p>
               ${stagioneSongs.length > 0 ? '<p class="empty-state__season-intro">Ascolta le canzoni di questa stagione!</p>' : ''}
             </div>
-            ${stagioneSongs.map((song, i) => buildSongSection(song, i, cantautori)).join('')}`;
+            ${stagioneSongs.map((song, i) => buildSongSection(song, i, cantautori)).join('')}`);
 
           if (stagioneSongs.length > 0) {
             const sr = new ScrollReveal();
@@ -280,7 +280,8 @@
           buildSongSection(song, i, cantautori)
         ).join('');
 
-        songsEl.innerHTML = html;
+        if (loadingEl) loadingEl.remove();
+        songsEl.insertAdjacentHTML('beforeend', html);
 
         /* 5. Attiva le rivelazioni scroll */
         const sr = new ScrollReveal();
