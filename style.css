@@ -1147,6 +1147,12 @@ main { position: relative; }
   .author-photo-placeholder { aspect-ratio: 1/1; width: 140px; height: 140px; }
 }
 
+@media (max-width: 780px) {
+  .tl-tick { display: none; }
+  .tl-tick:first-child,
+  .tl-tick:last-child  { display: flex; }
+}
+
 @media (max-width: 700px) {
   :root { --tl-label-w: 160px; }
   .tl-axis-row { grid-template-columns: var(--tl-label-w, 160px) 1fr; }
