@@ -1138,14 +1138,13 @@ main { position: relative; }
 
 @media (max-width: 900px) {
   .song-inner { grid-template-columns: 1fr; }
-  .song-sidebar { order: -1; }
   .author-card {
     position: static;
     display: grid;
     grid-template-columns: 140px 1fr;
   }
   .author-photo,
-  .author-photo-placeholder { aspect-ratio: auto; height: 140px; }
+  .author-photo-placeholder { aspect-ratio: 1/1; width: 140px; height: 140px; }
 }
 
 @media (max-width: 700px) {
@@ -1163,7 +1162,7 @@ main { position: relative; }
   .song-section         { padding: 3.5rem 1rem 3rem; }
   .author-card          { grid-template-columns: 1fr; }
   .author-photo,
-  .author-photo-placeholder { height: auto; aspect-ratio: 16/7; }
+  .author-photo-placeholder { width: 100%; height: auto; aspect-ratio: 1/1; }
 }
 
 @media (max-width: 500px) {
