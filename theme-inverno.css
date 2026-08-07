@@ -1,0 +1,50 @@
+/* ============================================================
+   TEMA INVERNO — sfondo cream chiaro, accento dark-olive
+   ============================================================ */
+
+:root {
+  --mustard:   #3F4439;
+  --gold-dim:  rgba(63,68,57,.15);
+  --gold-glow: rgba(63,68,57,.06);
+  --border:    rgba(63,68,57,.3);
+  --bg:        #F0ECC9;
+  --bg-surface:#E8E4C0;
+  --bg-card:   #F8F5DC;
+  --text:      #1a1a10;
+  --text-2:    #3d3b28;
+  --text-3:    #7a785a;
+  --shadow:    0 8px 32px rgba(0,0,0,.12);
+  --slot-bg:   rgba(240,236,201,.65);
+}
+
+/* Hero chiaro */
+.hero {
+  background: radial-gradient(ellipse 70% 55% at 50% 42%, #e4e0b8 0%, var(--bg) 72%);
+}
+.hero::before { border-color: rgba(63,68,57,.35); }
+.hero::after  { border-color: rgba(63,68,57,.2); }
+
+/* Roulette — sfondo già gestito da var(--bg) in style.css */
+.roulette-slot { border-color: rgba(63,68,57,.35); }
+
+/* L'arco cream sarebbe invisibile su sfondo cream */
+.hdec-arc--4 { stroke: #3F4439; }
+
+/* Song sections */
+.song-section { border-top-color: rgba(63,68,57,.15); }
+
+/* Numeri decorativi grandi */
+.song-number { color: rgba(63,68,57,.08); }
+
+/* Hover riga timeline */
+.tl-row:hover { background: rgba(63,68,57,.05); }
+
+/* Blockquote */
+.song-quote { border-left-color: #3F4439; }
+
+/* Il disco è sempre scuro: il testo hero deve essere sempre chiaro */
+.hero-eyebrow { color: var(--cream); }
+.slot-item    { color: #3F4439; }   /* dark-olive su sfondo cream */
+.slot-sep     { color: #3F4439; }
+.hero-cta     { color: var(--cream); border-color: rgba(240,236,201,.35); }
+.hero-cta:hover { color: var(--cream); border-color: var(--cream); }

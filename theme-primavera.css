@@ -1,0 +1,43 @@
+/* ============================================================
+   TEMA PRIMAVERA — sfondo teal (#058789), testo cream
+   ============================================================ */
+
+:root {
+  --bg:        #036e6f;
+  --bg-surface:#025a5b;
+  --bg-card:   #0a5c5e;
+  --text:      #F0ECC9;
+  --text-2:    rgba(240,236,201,.75);
+  --text-3:    rgba(240,236,201,.48);
+  --mustard:   #E3A72F;       /* mustard come accento su sfondo teal */
+  --gold-dim:  rgba(227,167,47,.22);
+  --gold-glow: rgba(227,167,47,.07);
+  --border:    rgba(240,236,201,.15);
+  --slot-bg:   rgba(3,110,111,.6);
+  --shadow:    0 8px 40px rgba(0,0,0,.35);
+}
+
+.hero {
+  background: radial-gradient(ellipse 70% 55% at 50% 42%, #0d3030 0%, #036e6f 72%);
+}
+.hero::before { border-color: rgba(240,236,201,.2); }
+.hero::after  { border-color: rgba(227,167,47,.3); }
+
+.roulette-slot { border-color: rgba(227,167,47,.4); }
+/* slot-item: var(--mustard) = #E3A72F su sfondo teal — ottimo contrasto */
+
+/* L'arco teal sarebbe poco visibile su sfondo teal */
+.hdec-arc--2 { stroke: var(--cream); opacity: .4; }
+.hdec-arc--5 { stroke: var(--cream); opacity: .25; }
+
+.song-section { border-top-color: rgba(240,236,201,.12); }
+
+/* Card artista: sfondo scuro per distinguersi dal teal delle sezioni */
+.author-card {
+  background: rgba(8,8,6,.85);
+  border-color: rgba(240,236,201,.12);
+}
+.author-name        { color: #F0ECC9; }
+.author-date__label { color: rgba(240,236,201,.55); }
+.author-date__value { color: #E3A72F; }
+.author-photo-placeholder { color: rgba(227,167,47,.25); }

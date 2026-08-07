@@ -15,6 +15,28 @@
     return `${y}-${m}-${g}`;
   }
 
+  /** Restituisce true se oggi è la prima domenica di settembre (giorno 1–7, domenica). */
+  function isPrimaDomenicaSettembre() {
+    const d = new Date();
+    return d.getMonth() === 8 && d.getDay() === 0 && d.getDate() <= 7;
+  }
+
+  /** Restituisce la chiave JSON e il nome della stagione corrente. */
+  function getStagioneInfo() {
+    const d = new Date();
+    const y = d.getFullYear();
+    const m = d.getMonth() + 1;
+    const g = d.getDate();
+    if ((m === 3 && g >= 20) || m === 4 || m === 5 || (m === 6 && g <= 20))
+      return { key: `${y}-03-20`, nome: 'primavera' };
+    if ((m === 6 && g >= 21) || m === 7 || m === 8 || (m === 9 && g <= 22))
+      return { key: `${y}-06-21`, nome: 'estate' };
+    if ((m === 9 && g >= 23) || m === 10 || m === 11 || (m === 12 && g <= 20))
+      return { key: `${y}-09-23`, nome: 'autunno' };
+    const winterYear = (m === 12) ? y : y - 1;
+    return { key: `${winterYear}-12-21`, nome: 'inverno' };
+  }
+
   function todayReadable() {
     const d = new Date();
     const mesi = [
@@ -213,17 +235,48 @@
           loadJSON('cantautori.json'),
         ]);
 
-        const songs = calendario[key];
+        const songs = calendario[key] || [];
 
-        /* nessuna canzone per oggi */
-        if (!songs || songs.length === 0) {
+        /* prima domenica di settembre: aggiunge Eskimo in coda */
+        const domenicaSongs = isPrimaDomenicaSettembre()
+          ? (calendario['prima-domenica-settembre'] || [])
+          : [];
+        const allSongs = [...songs, ...domenicaSongs];
+
+        /* nessuna canzone per oggi: messaggio + canzoni di stagione */
+        if (allSongs.length === 0) {
           if (loadingEl) loadingEl.classList.add('hidden');
-          if (noSongsEl) noSongsEl.classList.remove('hidden');
+
+          const stagione = getStagioneInfo();
+          const stagioneSongs = calendario[stagione.key] || [];
+
+          songsEl.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state__icon" aria-hidden="true">♩</div>
+              <p class="empty-state__title">Per questa giornata non abbiamo ancora trovato nessuna canzone!</p>
+              <p class="empty-state__contact">Hai dei suggerimenti da darci?&nbsp;<a href="about.html" class="empty-link">Contattaci</a></p>
+              ${stagioneSongs.length > 0 ? '<p class="empty-state__season-intro">Ascolta le canzoni di questa stagione!</p>' : ''}
+            </div>
+            ${stagioneSongs.map((song, i) => buildSongSection(song, i, cantautori)).join('')}`;
+
+          if (stagioneSongs.length > 0) {
+            const sr = new ScrollReveal();
+            sr.observe(songsEl.querySelectorAll('.sr, .sr-left, .sr-right, .stagger'));
+
+            const pm = new YTPlayerManager();
+            pm.setTotalSlots(stagioneSongs.length);
+            pm.loadAPI(() => {
+              stagioneSongs.forEach((song, i) => {
+                const ytId = extractYouTubeId(song.youtube);
+                if (ytId) pm.createPlayer(`yt-${i}`, ytId, i);
+              });
+            });
+          }
           return;
         }
 
         /* 4. Genera le sezioni HTML */
-        const html = songs.map((song, i) =>
+        const html = allSongs.map((song, i) =>
           buildSongSection(song, i, cantautori)
         ).join('');
 
@@ -235,10 +288,10 @@
 
         /* 6. Inizializza i player YouTube */
         const pm = new YTPlayerManager();
-        pm.setTotalSlots(songs.length);
+        pm.setTotalSlots(allSongs.length);
 
         pm.loadAPI(() => {
-          songs.forEach((song, i) => {
+          allSongs.forEach((song, i) => {
             const ytId = extractYouTubeId(song.youtube);
             if (ytId) pm.createPlayer(`yt-${i}`, ytId, i);
           });

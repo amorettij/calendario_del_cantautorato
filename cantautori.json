@@ -5,13 +5,13 @@
     "morte": "2026-08-06",
     "foto": "francesco_guccini.png"
   },
-  "francesco_de_gregori": {
+  "francesco_degregori": {
     "nome": "Francesco De Gregori",
     "nascita": "1951-04-04",
     "morte": null,
     "foto": "francesco_degregori.png"
   },
-  "fabrizio_de_andre": {
+  "fabrizio_deandre": {
     "nome": "Fabrizio De André",
     "nascita": "1940-02-18",
     "morte": "1999-01-26",
@@ -19,8 +19,8 @@
   },
   "lucio_dalla": {
     "nome": "Lucio Dalla",
-    "nascita": "1943-01-04",
-    "morte": "2012-03-04",
+    "nascita": "1943-03-04",
+    "morte": "2012-03-01",
     "foto": "lucio_dalla.png"
   },
   "lucio_battisti": {
@@ -64,5 +64,17 @@
     "nascita": "1942-11-05",
     "morte": "2002-10-07",
     "foto": "pierangelo_bertoli.png"
+  },
+  "luigi_tenco": {
+    "nome": "Luigi Tenco",
+    "nascita": "1938-03-21",
+    "morte": "1967-01-27",
+    "foto": "luigi_tenco.png"
+  },
+  "giuni_russo": {
+    "nome": "Giuni Russo",
+    "nascita": "1951-09-07",
+    "morte": "2004-09-14",
+    "foto": "giuni_russo.png"
   }
 }

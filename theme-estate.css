@@ -1,0 +1,55 @@
+/* ============================================================
+   TEMA ESTATE — sfondo mustard (#E3A72F), testo scuro
+   ============================================================ */
+
+:root {
+  --bg:        #c8901e;
+  --bg-surface:#b47d18;
+  --bg-card:   #9e6d13;
+  --text:      #0e0a03;
+  --text-2:    #2d2006;
+  --text-3:    #6a5018;
+  --mustard:   #3F4439;       /* dark-olive come accento su sfondo caldo */
+  --gold-dim:  rgba(63,68,57,.2);
+  --gold-glow: rgba(63,68,57,.06);
+  --border:    rgba(14,10,3,.2);
+  --slot-bg:   rgba(200,144,30,.6);
+  --shadow:    0 8px 40px rgba(0,0,0,.2);
+}
+
+.hero {
+  background: radial-gradient(ellipse 70% 55% at 50% 42%, #e8b840 0%, #c8901e 72%);
+}
+.hero::before { border-color: rgba(14,10,3,.2); }
+.hero::after  { border-color: rgba(63,68,57,.25); }
+
+.roulette-slot { border-color: rgba(14,10,3,.3); }
+.slot-item     { color: var(--cream); }   /* cream su sfondo amber */
+.slot-sep      { color: var(--cream); }
+
+/* L'arco mustard sarebbe poco visibile su sfondo mustard */
+.hdec-arc--1 { stroke: var(--dark-olive); }
+
+/* Maschere slot: sfondo caldo */
+.slot-mask--top    { background: linear-gradient(to bottom, var(--bg) 0%, transparent 100%); }
+.slot-mask--bottom { background: linear-gradient(to top,   var(--bg) 0%, transparent 100%); }
+
+.song-section { border-top-color: rgba(14,10,3,.12); }
+
+/* Card artista: sfondo scuro + testo chiaro per contrasto sull'amber */
+.author-card {
+  background: rgba(8,8,6,.85);
+  border-color: rgba(240,236,201,.12);
+}
+.author-name         { color: #F0ECC9; }
+.author-date__label  { color: rgba(240,236,201,.55); }
+.author-date__value  { color: #E3A72F; }
+.author-photo-placeholder { color: rgba(227,167,47,.25); }
+.song-section:nth-child(even) { background: rgba(0,0,0,.08); }
+
+/* Il disco è sempre scuro: il testo hero deve essere sempre chiaro */
+.hero-eyebrow { color: var(--cream); }
+.slot-item    { color: var(--cream); text-shadow: 0 0 18px rgba(240,236,201,.25); }
+.slot-sep     { color: var(--cream); }
+.hero-cta     { color: var(--cream); border-color: rgba(240,236,201,.35); }
+.hero-cta:hover { color: var(--cream); border-color: var(--cream); }

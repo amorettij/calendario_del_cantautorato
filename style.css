@@ -16,7 +16,7 @@
   /* surfaces */
   --bg:         #0e0e0e;
   --bg-surface: #161616;
-  --bg-card:    #1e1e1e;
+  --bg-card:    #282828;
 
   /* aliases per il codice esistente */
   --gold:       var(--mustard);
@@ -39,6 +39,7 @@
   --font-serif:     'Playfair Display', Georgia, serif; /* corsivo/citazioni */
   --font-body:      'Inter', system-ui, sans-serif;
 
+  --slot-bg:    rgba(14,14,14,.65);   /* vetro del quadrante: semi-trasparente */
   --radius:     10px;
   --ease-out:   cubic-bezier(.22,1,.36,1);
   --slot-h:     80px;         /* must match SLOT_H in roulette.js */
@@ -86,7 +87,7 @@ body {
 .header-logo {
   font-family: var(--font-main);
   font-size: .95rem;
-  color: var(--mustard);
+  color: #E3A72F;
   letter-spacing: .06em;
   text-transform: uppercase;
   text-decoration: none;
@@ -94,7 +95,7 @@ body {
 }
 .header-date {
   font-size: .8rem;
-  color: var(--text-2);
+  color: rgba(240,236,201,.7);
   white-space: nowrap;
 }
 
@@ -105,7 +106,7 @@ body {
   gap: 1.75rem;
 }
 .nav-link {
-  color: var(--text-2);
+  color: rgba(240,236,201,.7);
   text-decoration: none;
   font-size: .78rem;
   letter-spacing: .1em;
@@ -116,8 +117,8 @@ body {
 }
 .nav-link:hover,
 .nav-link--active {
-  color: var(--mustard);
-  border-bottom-color: var(--mustard);
+  color: #E3A72F;
+  border-bottom-color: #E3A72F;
 }
 
 /* Header sempre visibile (pagine secondarie) */
@@ -310,6 +311,9 @@ body {
 .hero-content {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 2rem;
   animation: fade-up .8s var(--ease-out) both;
@@ -327,7 +331,7 @@ body {
 .roulette-wrap {
   display: inline-flex;
   align-items: center;
-  gap: .5rem;
+  gap: 4px;
   margin-bottom: 2rem;
 }
 
@@ -336,10 +340,12 @@ body {
   height: var(--slot-h);
   position: relative;
   overflow: hidden;
-  background: rgba(227,167,47,.05);
-  border: 1px solid rgba(227,167,47,.28);
+  background: var(--slot-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,.6);
   border-radius: 8px;
-  box-shadow: 0 0 24px rgba(227,167,47,.07), inset 0 0 20px rgba(0,0,0,.25);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.15);
 }
 .roulette-slot--month { width: 130px; }
 .roulette-slot--year  { width: 110px; }
@@ -351,8 +357,8 @@ body {
   z-index: 2;
   pointer-events: none;
 }
-.slot-mask--top    { top: 0;    background: linear-gradient(to bottom, var(--bg) 0%, transparent 100%); }
-.slot-mask--bottom { bottom: 0; background: linear-gradient(to top,   var(--bg) 0%, transparent 100%); }
+.slot-mask--top    { top: 0;    background: linear-gradient(to bottom, var(--slot-bg) 0%, transparent 100%); }
+.slot-mask--bottom { bottom: 0; background: linear-gradient(to top,   var(--slot-bg) 0%, transparent 100%); }
 
 .roulette-track {
   display: flex;
@@ -369,7 +375,6 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: var(--mustard);
-  text-shadow: 0 0 18px rgba(227,167,47,.4);
   flex-shrink: 0;
   user-select: none;
 }
@@ -394,6 +399,7 @@ body {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2.5rem;
   gap: .6rem;
   color: var(--text-2);
   text-decoration: none;
@@ -553,8 +559,12 @@ main { position: relative; }
   align-items: center;
   position: relative;
   border-top: 1px solid var(--border);
+  background: var(--bg-surface);
 }
-.song-section:nth-child(even) { background: var(--bg-surface); }
+.song-section:first-child {
+  border-top: none;
+}
+.song-section:nth-child(even) { background: var(--bg); }
 
 .song-number {
   position: absolute;
@@ -603,7 +613,7 @@ main { position: relative; }
 .song-quote {
   padding: 1.25rem 1.5rem 1.25rem 2rem;
   border-left: 3px solid var(--mustard);
-  background: var(--gold-glow);
+  background: rgba(8,8,6,.82);
   border-radius: 0 8px 8px 0;
   position: relative;
 }
@@ -612,15 +622,15 @@ main { position: relative; }
   position: absolute;
   top: -.6rem; left: .8rem;
   font-size: 4.5rem;
-  color: var(--mustard);
-  opacity: .2;
+  color: #F0ECC9;
+  opacity: .15;
   font-family: 'Playfair Display', Georgia, serif;
   line-height: 1;
 }
 .song-quote p {
   font-style: italic;
   font-size: 1.05rem;
-  color: var(--text-2);
+  color: #F0ECC9;
   line-height: 1.85;
 }
 
@@ -645,22 +655,22 @@ main { position: relative; }
   transition: background .25s, border-color .25s;
 }
 .song-link.yt {
-  background: rgba(213,75,26,.1);
-  color: var(--orange-red);
-  border: 1px solid rgba(213,75,26,.25);
+  background: #1a0a06;
+  color: #ff7a50;
+  border: 1px solid rgba(213,75,26,.5);
 }
 .song-link.yt:hover {
-  background: rgba(213,75,26,.2);
-  border-color: rgba(213,75,26,.45);
+  background: #2e1008;
+  border-color: var(--orange-red);
 }
 .song-link.sp {
-  background: rgba(30,215,96,.08);
+  background: #061a0c;
   color: var(--green);
-  border: 1px solid rgba(30,215,96,.2);
+  border: 1px solid rgba(30,215,96,.4);
 }
 .song-link.sp:hover {
-  background: rgba(30,215,96,.18);
-  border-color: rgba(30,215,96,.4);
+  background: #0d2e18;
+  border-color: var(--green);
 }
 
 .song-players { display: flex; flex-direction: column; gap: 1.25rem; }
@@ -1049,6 +1059,15 @@ main { position: relative; }
   color: var(--text-2);
 }
 .empty-state__desc { color: var(--text-3); line-height: 1.8; }
+.empty-state__contact { color: var(--text-3); font-size: .9rem; }
+.empty-link { color: var(--mustard); text-decoration: underline; }
+.empty-link:hover { color: var(--cream); }
+.empty-state__season-intro {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  color: var(--text-2);
+  margin-top: 1rem;
+}
 
 /* ============================================================
    FOOTER
@@ -1056,10 +1075,10 @@ main { position: relative; }
 .site-footer {
   padding: 2rem;
   text-align: center;
-  color: var(--text-3);
+  color: rgba(240,236,201,.45);
   font-size: .8rem;
-  border-top: 1px solid var(--border);
-  background: var(--bg-surface);
+  border-top: 1px solid rgba(240,236,201,.08);
+  background: rgba(10,10,10,.92);
 }
 
 /* ============================================================

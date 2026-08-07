@@ -1,11 +1,159 @@
 {
+  "2026-01-26": [
+    {
+      "titolo": "La Morte",
+      "autore": "Fabrizio De André",
+      "autore_json": "fabrizio_deandre",
+      "citazione": "",
+      "commento": "26 gennaio — anniversario della morte di Fabrizio De André (1999)",
+      "youtube": "https://www.youtube.com/watch?v=uxXijewgmAY",
+      "spotify": "https://open.spotify.com/track/6erGCnblurVdvW1fRHSw9E"
+    }
+  ],
+  "2026-01-27": [
+    {
+      "titolo": "Auschwitz (La canzone del bambino nel vento)",
+      "autore": "Francesco Guccini",
+      "autore_json": "francesco_guccini",
+      "citazione": "",
+      "commento": "27 gennaio — Giorno della Memoria",
+      "youtube": "https://www.youtube.com/watch?v=krsp726YPAk",
+      "spotify": "https://open.spotify.com/track/4d5T5maYQCq7OChCiNjcte"
+    },
+    {
+      "titolo": "Ciao amore ciao",
+      "autore": "Luigi Tenco",
+      "autore_json": "luigi_tenco",
+      "citazione": "",
+      "commento": "Ciao amore ciao fu l'ultima canzone di Luigi Tenco presentata al 17° Festival di Sanremo nel Gennaio 1967",
+      "youtube": "https://www.youtube.com/watch?v=TB-9jtUH4hE",
+      "spotify": "https://open.spotify.com/track/388Rzi0ggGLhG20fZnssLS"
+    }
+  ],
+  "2026-03-04": [
+    {
+      "titolo": "4 marzo 1943",
+      "autore": "Lucio Dalla",
+      "autore_json": "lucio_dalla",
+      "citazione": "",
+      "commento": "4 marzo — nascita di Lucio Dalla (1943): la canzone prende il titolo dalla sua data di nascita",
+      "youtube": "https://www.youtube.com/watch?v=IC73-TYnOck",
+      "spotify": "https://open.spotify.com/track/0l5nPlf9UtAczeyviURsva"
+    }
+  ],
+  "2026-03-17": [
+    {
+      "titolo": "Aida",
+      "autore": "Rino Gaetano",
+      "autore_json": "rino_gaetano",
+      "citazione": "",
+      "commento": "17 marzo — anniversario dell'Unità d'Italia",
+      "youtube": "https://www.youtube.com/watch?v=eQWh1eh0Bhs",
+      "spotify": "https://open.spotify.com/track/7N1SQcqAkSvUgnlvrU0Et8"
+    }
+  ],
+  "2026-03-20": [
+    {
+      "titolo": "Un chimico",
+      "autore": "Fabrizio De André",
+      "autore_json": "fabrizio_deandre",
+      "citazione": "",
+      "commento": "20 marzo — inizio della primavera",
+      "youtube": "https://www.youtube.com/watch?v=M6WdNC5kPTI",
+      "spotify": "https://open.spotify.com/track/5PZaJIsWW4ZQtmpaX9c1yD"
+    }
+  ],
+  "2026-04-25": [
+    {
+      "titolo": "Viva l'Italia",
+      "autore": "Francesco De Gregori",
+      "autore_json": "francesco_degregori",
+      "citazione": "Viva l'Italia l'Italia liberata",
+      "commento": "25 aprile — Festa della Liberazione",
+      "youtube": "https://www.youtube.com/watch?v=kMx2YGkKUqQ",
+      "spotify": "https://open.spotify.com/track/6aQVKyPa0mUm6GLmey6x4P"
+    }
+  ],
+  "2026-05-01": [
+    {
+      "titolo": "Fiore di maggio",
+      "autore": "Fabio Concato",
+      "autore_json": "fabio_concato",
+      "citazione": "",
+      "commento": "1 maggio — Festa dei Lavoratori",
+      "youtube": "https://www.youtube.com/watch?v=Z5GzSzkTAUI",
+      "spotify": "https://open.spotify.com/track/2pWzPQ2lhuEE2sb3aPKMHX"
+    }
+  ],
+  "2026-05-06": [
+    {
+      "titolo": "Khorakhanè (A forza di essere vento)",
+      "autore": "Fabrizio De André",
+      "autore_json": "fabrizio_deandre",
+      "citazione": "",
+      "commento": "6 maggio — E poi Mirka a San Giorgio di maggio",
+      "youtube": "https://www.youtube.com/watch?v=7BwZdO-SILY",
+      "spotify": "https://open.spotify.com/track/1vIIlm4WH8ymz70wyLZuR9"
+    }
+  ],
+  "2026-06-01": [
+    {
+      "titolo": "Giugno '73",
+      "autore": "Fabrizio De André",
+      "autore_json": "fabrizio_deandre",
+      "citazione": "",
+      "commento": "1 giugno",
+      "youtube": "https://www.youtube.com/watch?v=wDDcFTNktTk",
+      "spotify": "https://open.spotify.com/track/0tlsSbAswQAUW02AWE26Fz"
+    }
+  ],
+  "2026-06-21": [
+    {
+      "titolo": "Canzone per l'estate",
+      "autore": "Fabrizio De André",
+      "autore_json": "fabrizio_deandre",
+      "citazione": "",
+      "commento": "21 giugno — solstizio d'estate",
+      "youtube": "https://www.youtube.com/watch?v=88ngD93edkw",
+      "spotify": "https://open.spotify.com/track/0NwMnpzgCMQE0m1FEYpbct"
+    },
+    {
+      "titolo": "Summer on a Solitary Beach",
+      "autore": "Franco Battiato",
+      "autore_json": "franco_battiato",
+      "citazione": "",
+      "commento": "21 giugno — solstizio d'estate",
+      "youtube": "https://www.youtube.com/watch?v=rHOPw89hqRA",
+      "spotify": "https://open.spotify.com/track/0QcwEDbtwX8ylH4vthoovI"
+    },
+    {
+      "titolo": "Un'estate al mare",
+      "autore": "Giuni Russo",
+      "autore_json": "giuni_russo",
+      "citazione": "",
+      "commento": "21 giugno — solstizio d'estate",
+      "youtube": "https://www.youtube.com/watch?v=d8Ddo92-lBg",
+      "spotify": "https://open.spotify.com/track/56sOrPe3wOf16PUXKzyjFR"
+    }
+  ],
+  "2026-08-02": [
+    {
+      "titolo": "Se ti tagliassero a pezzetti",
+      "autore": "Fabrizio De André",
+      "autore_json": "fabrizio_deandre",
+      "citazione": "T'ho incrociata alla stazione / che inseguivi il tuo profumo / presa in trappola da un tailleur grigio fumo / i giornali in una mano e nell'altra il tuo destino / camminavi fianco a fianco al tuo assassino.",
+      "commento": "Massimo Bubola e Fabrizio De André dedicano questi versi alle vittime della strage della stazione di Bologna del 2 agosto 1980.",
+      "youtube": "https://www.youtube.com/watch?v=u6rSiIgdczo",
+      "spotify": "https://open.spotify.com/track/0P2g3McXOxosDczfgRy4bU"
+    }
+  ],
   "2026-08-06": [
     {
       "titolo": "L'ultima volta",
       "autore": "Francesco Guccini",
       "autore_json": "francesco_guccini",
       "citazione": "",
-      "commento": "Il 6 agosto del 2026 muore Francesco Guccini. In suo onore iniziamo a lavorare al Calendario del Cantautorato, che era nei nostri progetti da almeno dieci anni.",
+      "commento": "Il 6 agosto del 2026 muore Francesco Guccini. In suo onore iniziamo a lavorare al Calendario del Cantautorato che era nei nostri progetti da almeno dieci anni.",
       "youtube": "https://www.youtube.com/watch?v=Dl2ZKHpIxNw",
       "spotify": "https://open.spotify.com/track/05Y8ErDoSfgaUkI6HWnEM8"
     }
@@ -21,6 +169,17 @@
       "spotify": "https://open.spotify.com/track/2sa4s7hBB0oYJCRuAhbzd4"
     }
   ],
+  "2026-08-08": [
+    {
+      "titolo": "Sere d'agosto",
+      "autore": "Giuni Russo",
+      "autore_json": "giuni_russo",
+      "citazione": "",
+      "commento": "8 agosto",
+      "youtube": "https://www.youtube.com/watch?v=v3JFn7EKBpk",
+      "spotify": "https://open.spotify.com/track/1dz91RDJo7W3pa8EFeLu1E"
+    }
+  ],
   "2026-08-10": [
     {
       "titolo": "La sera dei miracoli",
@@ -32,15 +191,139 @@
       "spotify": "https://open.spotify.com/track/4tKiqgP4hiFNSCDeoaNctg"
     }
   ],
-  "YYYY-MM-DD": [
+  "2026-09-23": [
     {
-      "titolo": "Titolo della canzone",
-      "autore": "Nome dell'autore",
-      "autore_json": "chiave_in_cantautori_json",
-      "citazione": "Citazione tratta dalla canzone.",
-      "commento": "Commento sul motivo per cui questa canzone è stata scelta.",
-      "youtube": "https://www.youtube.com/watch?v=VIDEO_ID",
-      "spotify": "https://open.spotify.com/track/TRACK_ID"
+      "titolo": "Autunno",
+      "autore": "Francesco Guccini",
+      "autore_json": "francesco_guccini",
+      "citazione": "",
+      "commento": "23 settembre — inizio dell'autunno",
+      "youtube": "https://www.youtube.com/watch?v=JniLdpR3NQU",
+      "spotify": "https://open.spotify.com/track/60S5HcEz0Ojy3ZikLdwlny"
+    },
+    {
+      "titolo": "Veni l'autunnu",
+      "autore": "Franco Battiato",
+      "autore_json": "franco_battiato",
+      "citazione": "",
+      "commento": "23 settembre — inizio dell'autunno",
+      "youtube": "https://www.youtube.com/watch?v=wxJVu8mTOsk",
+      "spotify": "https://open.spotify.com/track/2K2jnseGgmqVjooppzi0v7"
+    }
+  ],
+  "2026-11-02": [
+    {
+      "titolo": "Una storia sbagliata",
+      "autore": "Fabrizio De André",
+      "autore_json": "fabrizio_deandre",
+      "citazione": "",
+      "commento": "2 novembre — anniversario della morte di Pier Paolo Pasolini",
+      "youtube": "https://www.youtube.com/watch?v=hvUOSDbVUUE",
+      "spotify": "https://open.spotify.com/track/6Y1eGg0Mtn5celKbZCHtkS"
+    },
+    {
+      "titolo": "A Pa'",
+      "autore": "Francesco De Gregori",
+      "autore_json": "francesco_degregori",
+      "citazione": "",
+      "commento": "2 novembre — anniversario della morte di Pier Paolo Pasolini",
+      "youtube": "https://www.youtube.com/watch?v=RpzPoExVzio",
+      "spotify": "https://open.spotify.com/track/6QHZ3XTkDAstpP6AV6kPZm"
+    }
+  ],
+  "2026-12-03": [
+    {
+      "titolo": "Il 3 Dicembre del '39",
+      "autore": "Francesco Guccini",
+      "autore_json": "francesco_guccini",
+      "citazione": "",
+      "commento": "",
+      "youtube": "https://www.youtube.com/watch?v=sm5PUO_IkPQ",
+      "spotify": "https://open.spotify.com/track/4KgbuRi4X56evvqanSOnwF"
+    }
+  ],
+  "2026-12-12": [
+    {
+      "titolo": "Viva l'Italia",
+      "autore": "Francesco De Gregori",
+      "autore_json": "francesco_degregori",
+      "citazione": "Viva l'Italia, l'Italia del 12 dicembre, l'Italia con le bandiere, l'Italia nuda come sempre",
+      "commento": "Il 12 dicembre 1969, alle ore 16:30, una bomba esplode nella sede della Banca Nazionale dell'Agricoltura in piazza Fontana a Milano: 17 morti e 88 feriti. È l'atto che inaugura la cosiddetta strategia della tensione e apre il lungo capitolo degli anni di piombo.",
+      "youtube": "https://www.youtube.com/watch?v=kMx2YGkKUqQ",
+      "spotify": "https://open.spotify.com/track/6aQVKyPa0mUm6GLmey6x4P"
+    }
+  ],
+  "2026-12-13": [
+    {
+      "titolo": "Santa Lucia",
+      "autore": "Francesco De Gregori",
+      "autore_json": "francesco_degregori",
+      "citazione": "",
+      "commento": "13 dicembre — Santa Lucia",
+      "youtube": "https://www.youtube.com/watch?v=3cDcNlmiTdw",
+      "spotify": "https://open.spotify.com/track/56A7YbF5HU4f2WPHSKfmcc"
+    }
+  ],
+  "2026-12-21": [
+    {
+      "titolo": "Inverno",
+      "autore": "Fabrizio De André",
+      "autore_json": "fabrizio_deandre",
+      "citazione": "",
+      "commento": "21 dicembre — solstizio d'inverno",
+      "youtube": "https://www.youtube.com/watch?v=EOfAsv_zwl4",
+      "spotify": "https://open.spotify.com/track/7bnnu8bfcHxRh1WC0FMXjX"
+    },
+    {
+      "titolo": "Inverno",
+      "autore": "Franco Battiato",
+      "autore_json": "franco_battiato",
+      "citazione": "",
+      "commento": "21 dicembre — solstizio d'inverno",
+      "youtube": "https://www.youtube.com/watch?v=ll7e9aGibLM",
+      "spotify": "https://open.spotify.com/track/1uVoheW0RTfZBsopq5xzBq"
+    }
+  ],
+  "2026-12-23": [
+    {
+      "titolo": "Natale",
+      "autore": "Francesco De Gregori",
+      "autore_json": "francesco_degregori",
+      "citazione": "",
+      "commento": "23 dicembre",
+      "youtube": "https://www.youtube.com/watch?v=OqwcV82VqUY",
+      "spotify": "https://open.spotify.com/track/4xM4ctOb3WswWUQzutFh1P"
+    }
+  ],
+  "2026-12-25": [
+    {
+      "titolo": "Incontro",
+      "autore": "Francesco Guccini",
+      "autore_json": "francesco_guccini",
+      "citazione": "Come in un libro scritto male lui s'era ucciso per Natale",
+      "commento": "25 dicembre — Natale",
+      "youtube": "https://www.youtube.com/watch?v=MLXvSdTV0R0",
+      "spotify": "https://open.spotify.com/track/76CWFuapQCGVNJPRj0v6ov"
+    },
+    {
+      "titolo": "Eskimo",
+      "autore": "Francesco Guccini",
+      "autore_json": "francesco_guccini",
+      "citazione": "",
+      "commento": "25 dicembre — Natale",
+      "youtube": "https://www.youtube.com/watch?v=TMV_g3SKteg",
+      "spotify": "https://open.spotify.com/track/2fA04j5MGP7oxFdLuMuQJd"
+    }
+  ],
+  "prima-domenica-settembre": [
+    {
+      "titolo": "Eskimo",
+      "autore": "Francesco Guccini",
+      "autore_json": "francesco_guccini",
+      "citazione": "",
+      "commento": "Prima domenica di settembre",
+      "youtube": "https://www.youtube.com/watch?v=TMV_g3SKteg",
+      "spotify": "https://open.spotify.com/track/2fA04j5MGP7oxFdLuMuQJd"
     }
   ]
 }
