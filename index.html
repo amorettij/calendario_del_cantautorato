@@ -39,6 +39,71 @@
   <section class="hero" id="hero">
     <div class="hero-noise" aria-hidden="true"></div>
 
+    <!-- Orbite e angoli di sfondo — dietro al disco -->
+    <div class="hero-bg-orbits" aria-hidden="true">
+
+      <!-- Anelli orbitanti con arco parziale -->
+      <div class="hbo hbo--1"></div>
+      <div class="hbo hbo--2"></div>
+      <div class="hbo hbo--3"></div>
+      <div class="hbo hbo--4"></div>
+      <div class="hbo hbo--5"></div>
+      <div class="hbo hbo--6"></div>
+
+      <!-- Angolo in alto a sinistra -->
+      <svg class="hcorner hcorner--tl" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <g class="hcw hcw--a"><circle cx="0" cy="0" r="200" fill="none" stroke="var(--teal)"       stroke-width="8"  stroke-dasharray="150 1100" opacity=".6"/></g>
+        <g class="hcw hcw--b"><circle cx="0" cy="0" r="300" fill="none" stroke="var(--mustard)"    stroke-width="6"  stroke-dasharray="110 1780" opacity=".5"/></g>
+        <g class="hcw hcw--c"><circle cx="0" cy="0" r="130" fill="none" stroke="var(--orange-red)" stroke-width="10" stroke-dasharray="80  810"  opacity=".55"/></g>
+        <g class="hcw hcw--d"><circle cx="0" cy="0" r="390" fill="none" stroke="var(--cream)"      stroke-width="4"  stroke-dasharray="160 2250" opacity=".38"/></g>
+        <g class="hcw-tl" style="animation:sd-spin 26s linear infinite reverse">
+          <circle cx="195" cy="38"  r="28" fill="var(--mustard)"    fill-opacity=".6"/></g>
+        <g class="hcw-tl" style="animation:sd-spin 19s linear infinite">
+          <circle cx="38"  cy="185" r="22" fill="var(--teal)"       fill-opacity=".55"/></g>
+        <circle cx="0" cy="0" r="45" fill="var(--orange-red)" fill-opacity=".25"/>
+      </svg>
+
+      <!-- Angolo in alto a destra -->
+      <svg class="hcorner hcorner--tr" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <g class="hcw hcw--c"><circle cx="500" cy="0" r="220" fill="none" stroke="var(--mustard)"    stroke-width="7"  stroke-dasharray="120 1270" opacity=".55"/></g>
+        <g class="hcw hcw--a"><circle cx="500" cy="0" r="320" fill="none" stroke="var(--teal)"       stroke-width="5"  stroke-dasharray="130 1950" opacity=".48"/></g>
+        <g class="hcw hcw--d"><circle cx="500" cy="0" r="145" fill="none" stroke="var(--orange-red)" stroke-width="10" stroke-dasharray="70  910"  opacity=".55"/></g>
+        <g class="hcw hcw--b"><circle cx="500" cy="0" r="410" fill="none" stroke="var(--cream)"      stroke-width="4"  stroke-dasharray="140 2470" opacity=".36"/></g>
+        <g class="hcw-tr" style="animation:sd-spin 22s linear infinite">
+          <circle cx="305" cy="36"  r="26" fill="var(--teal)"       fill-opacity=".58"/></g>
+        <g class="hcw-tr" style="animation:sd-spin 31s linear infinite reverse">
+          <circle cx="464" cy="175" r="20" fill="var(--orange-red)" fill-opacity=".52"/></g>
+        <circle cx="500" cy="0" r="40" fill="var(--mustard)" fill-opacity=".22"/>
+      </svg>
+
+      <!-- Angolo in basso a sinistra -->
+      <svg class="hcorner hcorner--bl" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <g class="hcw hcw--b"><circle cx="0" cy="500" r="240" fill="none" stroke="var(--orange-red)" stroke-width="7"  stroke-dasharray="140 1460" opacity=".52"/></g>
+        <g class="hcw hcw--d"><circle cx="0" cy="500" r="155" fill="none" stroke="var(--cream)"      stroke-width="8"  stroke-dasharray="90  970"  opacity=".45"/></g>
+        <g class="hcw hcw--a"><circle cx="0" cy="500" r="350" fill="none" stroke="var(--mustard)"    stroke-width="5"  stroke-dasharray="155 2150" opacity=".48"/></g>
+        <g class="hcw hcw--c"><circle cx="0" cy="500" r="100" fill="none" stroke="var(--teal)"       stroke-width="10" stroke-dasharray="60  630"  opacity=".58"/></g>
+        <g class="hcw-bl" style="animation:sd-spin 24s linear infinite">
+          <circle cx="195" cy="464" r="24" fill="var(--teal)"       fill-opacity=".55"/></g>
+        <g class="hcw-bl" style="animation:sd-spin 17s linear infinite reverse">
+          <circle cx="38"  cy="310" r="20" fill="var(--cream)"      fill-opacity=".45"/></g>
+        <circle cx="0" cy="500" r="48" fill="var(--orange-red)" fill-opacity=".22"/>
+      </svg>
+
+      <!-- Angolo in basso a destra -->
+      <svg class="hcorner hcorner--br" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <g class="hcw hcw--d"><circle cx="500" cy="500" r="190" fill="none" stroke="var(--cream)"      stroke-width="7"  stroke-dasharray="110 1200" opacity=".44"/></g>
+        <g class="hcw hcw--a"><circle cx="500" cy="500" r="280" fill="none" stroke="var(--orange-red)" stroke-width="5"  stroke-dasharray="130 1710" opacity=".52"/></g>
+        <g class="hcw hcw--c"><circle cx="500" cy="500" r="120" fill="none" stroke="var(--mustard)"    stroke-width="10" stroke-dasharray="65  750"  opacity=".58"/></g>
+        <g class="hcw hcw--b"><circle cx="500" cy="500" r="380" fill="none" stroke="var(--teal)"       stroke-width="4"  stroke-dasharray="170 2360" opacity=".4"/></g>
+        <g class="hcw-br" style="animation:sd-spin 29s linear infinite reverse">
+          <circle cx="315" cy="468" r="26" fill="var(--mustard)"    fill-opacity=".58"/></g>
+        <g class="hcw-br" style="animation:sd-spin 21s linear infinite">
+          <circle cx="468" cy="330" r="22" fill="var(--teal)"       fill-opacity=".52"/></g>
+        <circle cx="500" cy="500" r="52" fill="var(--cream)" fill-opacity=".2"/>
+      </svg>
+
+    </div>
+
     <!-- Decorazione geometrica anni 70: archi SVG che si tracciano -->
     <svg class="hero-decor" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 

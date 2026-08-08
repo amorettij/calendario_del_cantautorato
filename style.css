@@ -308,6 +308,110 @@ body {
   50%       { opacity: .7; transform: translate(-50%,-50%) scale(1.03); }
 }
 
+/* ============================================================
+   HERO — orbite e angoli di sfondo (dietro al disco)
+   ============================================================ */
+.hero-bg-orbits {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Anelli con arco parziale — border trick */
+.hbo {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: transparent;
+}
+.hbo--1 {
+  width: 88vmin; height: 88vmin;
+  top: 50%; left: 50%;
+  margin: -44vmin 0 0 -44vmin;
+  border-width: 7px;
+  border-top-color: var(--teal);
+  border-right-color: var(--teal);
+  animation: sd-spin 22s linear infinite;
+  opacity: .45;
+}
+.hbo--2 {
+  width: 108vmin; height: 108vmin;
+  top: 50%; left: 50%;
+  margin: -54vmin 0 0 -54vmin;
+  border-width: 5px;
+  border-bottom-color: var(--mustard);
+  border-left-color: var(--mustard);
+  animation: sd-spin 38s linear infinite reverse;
+  opacity: .4;
+}
+.hbo--3 {
+  width: 76vmin; height: 76vmin;
+  top: 50%; left: 50%;
+  margin: -38vmin 0 0 -38vmin;
+  border-width: 8px;
+  border-top-color: var(--orange-red);
+  animation: sd-spin 17s linear infinite;
+  opacity: .44;
+}
+.hbo--4 {
+  width: 126vmin; height: 126vmin;
+  top: 50%; left: 50%;
+  margin: -63vmin 0 0 -63vmin;
+  border-width: 4px;
+  border-right-color: var(--cream);
+  border-bottom-color: var(--cream);
+  animation: sd-spin 55s linear infinite reverse;
+  opacity: .32;
+}
+.hbo--5 {
+  width: 68vmin; height: 68vmin;
+  top: 50%; left: 50%;
+  margin: -34vmin 0 0 -34vmin;
+  border-width: 7px;
+  border-left-color: var(--mustard);
+  border-top-color: var(--mustard);
+  animation: sd-spin 14s linear infinite;
+  opacity: .36;
+}
+.hbo--6 {
+  width: 142vmin; height: 142vmin;
+  top: 50%; left: 50%;
+  margin: -71vmin 0 0 -71vmin;
+  border-width: 3px;
+  border-top-color: var(--teal);
+  animation: sd-spin 70s linear infinite;
+  opacity: .26;
+}
+
+/* Cluster angoli */
+.hcorner {
+  position: absolute;
+  width: 40vw;
+  max-width: 500px;
+  height: auto;
+  pointer-events: none;
+  opacity: 0;
+  animation: fade-in 1.8s var(--ease-out) .3s both;
+}
+.hcorner--tl { top: 0; left: 0; }
+.hcorner--tr { top: 0; right: 0; }
+.hcorner--bl { bottom: 0; left: 0; }
+.hcorner--br { bottom: 0; right: 0; }
+
+/* Wrapper rotanti archi angolo */
+.hcw { transform-box: fill-box; transform-origin: center; }
+.hcw--a { animation: sd-spin 48s linear infinite; }
+.hcw--b { animation: sd-spin 30s linear infinite reverse; }
+.hcw--c { animation: sd-spin 65s linear infinite; }
+.hcw--d { animation: sd-spin 40s linear infinite reverse; }
+
+/* Wrapper rotanti cerchi pieni — origin fissato all'angolo del viewBox */
+.hcw-tl { transform-box: view-box; transform-origin:   0px   0px; }
+.hcw-tr { transform-box: view-box; transform-origin: 500px   0px; }
+.hcw-bl { transform-box: view-box; transform-origin:   0px 500px; }
+.hcw-br { transform-box: view-box; transform-origin: 500px 500px; }
+
 .hero-content {
   position: relative;
   z-index: 1;
@@ -1188,6 +1292,13 @@ main { position: relative; }
   .author-card          { grid-template-columns: 1fr; }
   .author-photo,
   .author-photo-placeholder { width: 100%; height: auto; aspect-ratio: 1/1; }
+}
+
+@media (max-width: 360px) {
+  .roulette-slot        { width: 60px; }
+  .roulette-slot--month { width: 88px; }
+  .roulette-slot--year  { width: 72px; }
+  .slot-item            { font-size: 1.25rem; }
 }
 
 @media (max-width: 500px) {
