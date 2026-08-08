@@ -76,5 +76,35 @@
     "nascita": "1951-09-07",
     "morte": "2004-09-14",
     "foto": "giuni_russo.png"
+  },
+  "gino_paoli": {
+    "nome": "Gino Paoli",
+    "nascita": "1934-09-23",
+    "morte": "2026-03-24",
+    "foto": "gino_paoli.png"
+  },
+  "antonello_venditti": {
+    "nome": "Antonello Venditti",
+    "nascita": "1949-03-08",
+    "morte": null,
+    "foto": "antonello_venditti.png"
+  },
+  "mina": {
+    "nome": "Mina",
+    "nascita": "1940-03-25",
+    "morte": null,
+    "foto": "mina.png"
+  },
+  "mia_martini": {
+    "nome": "Mia Martini",
+    "nascita": "1947-09-20",
+    "morte": "1995-05-12",
+    "foto": "mia_martini.png"
+  },
+  "riccardo_cocciante": {
+    "nome": "Riccardo Cocciante",
+    "nascita": "1946-02-20",
+    "morte": null,
+    "foto": "riccardo_cocciante.png"
   }
 }
